@@ -1,0 +1,108 @@
+/* Mengatur tampilan latar belakang untuk dashboard */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0a0a0a, #333333); /* Hitam gradasi */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Kontainer utama dashboard */
+.dashboard-container {
+    background-color: #222;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+/* Efek hover lembut pada kontainer */
+.dashboard-container:hover {
+    transform: scale(1.03);
+}
+
+/* Heading utama */
+.dashboard-container h1 {
+    font-size: 2.2rem;
+    font-family: 'Dancing Script', cursive;
+    color: #0098cc; /* Emas */
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+}
+
+.dashboard-container h1:hover {
+    color: blue; /* Emas lebih lembut */
+}
+
+/* Deskripsi */
+.dashboard-container p {
+    font-size: 1rem;
+    color: #cccccc;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* Tombol pilihan biodata */
+.biodata-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Link biodata */
+.biodata-link {
+    display: block;
+    padding: 0.8rem;
+    background-color: #0098cc; /* Abu-abu gelap */
+    color: black; /* Emas */
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.4s ease, transform 0.4s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.biodata-link:hover {
+    background-color: blue; /* Abu lebih terang */
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Animasi fade-in untuk kontainer */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body, .dashboard-container {
+    animation: fadeIn 1s ease-in-out;
+}
+/* Tombol Kembali */
+.back-button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #0098cc; /* Emas */
+    color: #222222;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.back-button:hover {
+    background-color: blue; /* Emas lebih lembut */
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+}

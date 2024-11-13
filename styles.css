@@ -1,0 +1,95 @@
+/* Mengatur tampilan latar belakang */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+}
+
+/* Kontainer login */
+.login-container {
+    background-color: #222;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+/* Heading */
+.login-container h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #00c4ff;
+}
+
+/* Label form */
+.login-container label {
+    display: block;
+    font-weight: 500;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+/* Input form */
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: #ffffff;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+    border-color: #00c4ff;
+}
+
+/* Tombol Login */
+.login-container button {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 1.5rem;
+    background-color: #00c4ff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #222;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+    background-color: #0098cc;
+}
+
+/* Petunjuk login */
+.login-container p {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+/* Efek animasi untuk halaman */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body, .login-container {
+    animation: fadeIn 1s ease-in-out;
+}
