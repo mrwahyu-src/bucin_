@@ -18,8 +18,11 @@
 
             <button type="submit">Login</button>
         </form>
+        <button id="coy">Free Login</button> <!-- Tombol Free Login -->
+    </div>
 
     <script>
+        // Fungsi untuk memvalidasi login manual
         function validateLogin(event) {
             event.preventDefault(); // Mencegah form untuk submit secara default
 
@@ -32,6 +35,12 @@
                 alert("Username atau password salah!");
             }
         }
+
+        // Fungsi untuk Free Login tanpa waktu tunggu
+        document.getElementById("coy").addEventListener("click", function() {
+            window.location.href = "dashboardfree.html"; // Langsung mengarahkan ke dashboard.html
+        });
+    
     </script>
 </body>
 </html>

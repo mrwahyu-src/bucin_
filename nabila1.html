@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Nabila Zahrotul Janah</title>
+    <!-- Memanggil CSS khusus untuk biodata -->
+    <link rel="stylesheet" href="wahyu.css">
+    <style>
+        /* Menambahkan efek blur untuk elemen kecuali nama lengkap dan pacar */
+        .blur-content {
+            filter: blur(5px);
+        }
+
+        /* Menampilkan nama lengkap dan pacar tanpa blur */
+        .highlight {
+            filter: none;
+        }
+
+        /* Tombol kembali */
+        .back-button {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="biodata-container">
+        <h1 class="highlight">Biodata Nabila Zahrotul Janah</h1>
+        
+        <p class="highlight"><strong>Nama Lengkap:</strong> Nabila Zahrotul Janah</p>
+        <div class="blur-content">
+            <p><strong>Tempat, Tanggal Lahir:</strong> Kemakmuran, 3 Mei 2006</p>
+            <p><strong>Alamat:</strong> Songgom, Brebes</p>
+            
+            <h2>Informasi Keluarga</h2>
+            <p><strong>Nama Ayah:</strong> Abu Sakur</p>
+            <p><strong>Nama Ibu:</strong> Alm. Hariyani</p>
+            <p><strong>Nama Kakak 1:</strong> Neli Suryani</p>
+            <p><strong>Anak Ke-:</strong> 2 (Terakhir)</p>
+            
+            <h2>Cita-cita</h2>
+            <p><strong>Cita-cita:</strong> Guru</p>
+        </div>
+
+        <p class="highlight"><strong>Pacar:</strong> <a href="wahyu1.html" class="partner-link">Mohammad Wahyu Sutanto</a></p>
+
+        <!-- Tombol Kembali -->
+        <a href="dashboardfree.html" class="back-button">Kembali ke Dashboard</a>
+    </div>
+    
+    <script>
+        setTimeout(function() {
+            window.location.href = "index.html"; // Mengarahkan ke index.html setelah 10 detik
+        }, 10000);
+    </script>
+</body>
+</html>

@@ -58,7 +58,7 @@ body {
     display: inline-block;
     margin-top: 2rem;
     padding: 0.8rem 1.5rem;
-    background-color: #00c4ff; /* Biru muda */
+    background-color: gray; /* Biru muda */
     color: #222222;
     font-weight: bold;
     border-radius: 5px;
@@ -105,3 +105,4 @@ body {
 .highlight {
     filter: none;
 }
+

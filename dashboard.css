@@ -27,12 +27,22 @@ body {
 }
 
 /* Heading utama */
+@keyframes fade-blink {
+    0%, 100% {
+        opacity: 1; /* Awal dan akhir dengan opasitas penuh */
+    }
+    50% {
+        opacity: 0.5; /* Titik tengah, agak transparan */
+    }
+}
+
 .dashboard-container h1 {
-    font-size: 2.2rem;
-    font-family: 'Dancing Script', cursive;
-    color: #0098cc; /* Emas */
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif; /* Font elegan */
+    color: #0098cc; /* Biru lembut */
     margin-bottom: 1rem;
     transition: color 0.3s ease;
+    animation: fade-blink 2s infinite ease-in-out; /* Tambahkan animasi kedap-kedip */
 }
 
 .dashboard-container h1:hover {

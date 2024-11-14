@@ -73,6 +73,27 @@ body {
     background-color: #0098cc;
 }
 
+/* Gaya untuk tombol Free Login */
+#coy {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    background-color: transparent;
+    border: 2px dashed #00c4ff;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #00c4ff;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/* Hover efek untuk tombol Free Login */
+#coy:hover {
+    background-color: #00c4ff;
+    color: #222;
+    border: 2px solid #00c4ff;
+}
+
 /* Petunjuk login */
 .login-container p {
     margin-top: 1.5rem;
